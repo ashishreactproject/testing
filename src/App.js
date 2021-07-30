@@ -87,8 +87,8 @@ function App() {
                 <Security />
               </div>
               <div className="feature-text">
-                <p>Donec eget ultricies sapi. Sed porttitor, mauris
-                ater lob facilisis, elit sapie eleifend ligula.
+                <p>Good workplace leaders know how to take advantage of the unexpected opportunities
+                they have to improve the workplace and support the workforce.
                 </p>
               </div>
             </div>
@@ -99,8 +99,8 @@ function App() {
                 <Beenhere />
               </div>
               <div className="feature-text">
-                <p>Donec eget ultricies sapi. Sed porttitor, mauris
-                ater lob facilisis, elit sapie eleifend ligula.
+                <p>Your time is important to us. Go online to book your seat
+                as per your scheduled time.
                 </p>
               </div>
             </div>
@@ -111,8 +111,8 @@ function App() {
                 <Payment />
               </div>
               <div className="feature-text">
-                <p>Donec eget ultricies sapi. Sed porttitor, mauris
-                ater lob facilisis, elit sapie eleifend ligula.
+                <p>Good hair style should be available to everyone. Our goal is to make
+                  all services affordable.
                 </p>
               </div>
             </div>
