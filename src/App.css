@@ -1,8 +1,4 @@
-/* *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-} */
+
 
 #banner{
   background: linear-gradient(rgba(0,0,0,0.5), #009688), url(images/banner.jpg);
@@ -34,6 +30,7 @@
 
 .banner-btn{
   margin: 70px auto 0;
+  cursor: pointer;
 }
 .banner-btn a{
   width: 150px;
@@ -74,6 +71,7 @@
   background: #009688;
   z-index: 2;
   color: #fff;
+  cursor: pointer;
 }
 .sideNav.close{
   right: -100%;
@@ -379,9 +377,15 @@ hr{
     padding: 10px;
     margin-bottom: 20px;
 }
+.footer-left p {
+  display: flex;
+}
+.footer-right p {
+  display: inline-flex;
+}
 .footer-right {
     text-align: right;
-}
+} 
 .footer-row h1 {
     margin: 10px 0 ;
 }
@@ -395,7 +399,6 @@ hr{
   font-size: 20px;
   color: #009688;
   margin: 10px;
-  display: flex;
 }
 .footer-img {
   max-width: 370px;
@@ -435,7 +438,7 @@ hr{
 @media screen and (max-width:770px) {
     .footer-left, .footer-right {
       flex-basis: 100%;
-      font-size: 14px;
+      font-size: 12px;
     }
     .footer-img {
       top: 25%;

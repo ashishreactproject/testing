@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Link } from 'react-scroll';
+
 import logo from './images/logo.png';
 import menu from './images/menu.png';
 import close from './images/close.png';
@@ -23,18 +19,6 @@ import { Beenhere, Call, Email, Facebook, Instagram, LocationCity, Payment, Secu
 
 
 function App() {
-  // var menuBtn = document.getElementById("menuBtn");
-  // var sideNav = document.getElementById("sideNav");
-  // var menu = document.getElementById("menu");
-
-  // var menuBtn = () => {
-  //   if (sideNav.style.right == "-250px") {
-  //     sideNav.style.right = "0";
-  //   }
-  //   else {
-  //     sideNav.style.right = "-250px";
-  //   }
-  // }
 
   const [clicked, setClicked] = useState(false);
 
@@ -51,20 +35,19 @@ function App() {
           <h1>Hair Studio</h1>
           <p>Style Your Hair is Style Your Life</p>
           <div className="banner-btn">
-
-            <a href="#"> <span> </span> Find out</a>
-            <a href="#"><span></span> Read More</a>
+            <Link to="footer" smooth={true} duration={1000}><span> </span> Find out</Link>
+            <Link to="service" smooth={true} duration={1000}><span></span> Read More</Link>
           </div>
         </div>
       </section>
       <div className={clicked ? "sideNav" : "sideNav close"}>
         <nav>
           <ul>
-            <li><a href="#banner">HOME</a></li>
-            <li>FEATURES</li>
-            <li>SERVICES</li>
-            <li>TESTIMONIALS</li>
-            <li>MEET US ! </li>
+            <li><Link to="banner" smooth={true} duration={1000}>HOME</Link></li>
+            <li><Link to="features" smooth={true} duration={1000}>FEATURES</Link></li>
+            <li><Link to="service" smooth={true} duration={1000}>SERVICES</Link></li>
+            <li><Link to="testimonial" smooth={true} duration={1000}>TESTIMONIALS</Link></li>
+            <li><Link to="footer" smooth={true} duration={1000}>MEET US ! </Link></li>
           </ul>
         </nav>
       </div>
@@ -83,7 +66,6 @@ function App() {
             <h1>Experienced Staff</h1>
             <div className="feature-desc">
               <div className="feature-icon">
-                {/* <i class="fa fa-shield"></i> */}
                 <Security />
               </div>
               <div className="feature-text">
@@ -95,7 +77,6 @@ function App() {
             <h1>Pre Booking Online</h1>
             <div className="feature-desc">
               <div className="feature-icon">
-                {/* <i class="fa fa-check-square-o"></i> */}
                 <Beenhere />
               </div>
               <div className="feature-text">
@@ -107,12 +88,11 @@ function App() {
             <h1>Affordable Cost</h1>
             <div className="feature-desc">
               <div className="feature-icon">
-                {/* <i class="fa fa-inr"></i> */}
                 <Payment />
               </div>
               <div className="feature-text">
                 <p>Good hair style should be available to everyone. Our goal is to make
-                  all services affordable.
+                all services affordable.
                 </p>
               </div>
             </div>
@@ -233,9 +213,9 @@ function App() {
             <p><ViewWeek className="footer-icon" /> Monday to Friday - 9am to 9pm</p>
             <p><Weekend className="footer-icon" /> Saturday to Sunday - 8am to 11pm</p>
           </div>
-          <div className="footer-right">
+          <div className="footer-right"> 
             <h1>Get in Touch</h1>
-            <p>#30 abc colony, xyz road, City<LocationCity className="footer-icon" /> </p>
+            <p>#30 abc colony, xyz road, City<LocationCity className="footer-icon" /> </p> <br></br>
             <p>hairstudio@shop.com<Email className="footer-icon" /> </p>
             <p>+91 1234567890<Call className="footer-icon" /> </p>
           </div>
