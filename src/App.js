@@ -229,7 +229,6 @@ function App() {
         </div>
       </section>
 
-
     </>
   );
 }
